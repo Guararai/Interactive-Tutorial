@@ -1,0 +1,124 @@
+/* Estilos principais */
+.app-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+  background: #f5f6fa;
+}
+
+.platform-header {
+  grid-column: 1 / -1;
+  background: #2d3436;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.platform-sidebar {
+  background: #34495e;
+  color: white;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.platform-content {
+  padding: 2rem;
+  background: #fff;
+}
+
+/* Botão de ajuda */
+.help-button {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.help-button:hover {
+  background: #d35400;
+  transform: scale(1.05);
+}
+
+/* Seções */
+.form-section,
+.data-section {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+  background: #34495e;
+  color: white;
+}
+
+/* Personalização COMPLETA do Driver.js */
+.driver-popover {
+  --driver-popover-background: #2d3436; /* Cor de fundo */
+  --driver-popover-color: #ffffff; /* Cor do texto */
+  --driver-popover-border-radius: 12px; /* Bordas arredondadas */
+  --driver-popover-padding: 1.5rem; /* Espaçamento interno */
+
+  --driver-highlight-color: #4bc2c7; /* Cor do highlight */
+  --driver-overlay-opacity: 0.9; /* Opacidade do overlay */
+
+  /* Título */
+  --driver-popover-title-font-size: 1.25rem;
+  --driver-popover-title-color: #4bc2c7;
+
+  /* Descrição */
+  --driver-popover-description-font-size: 1rem;
+
+  /* Botões */
+  --driver-popover-footer-button-padding: 0.5rem 1.5rem;
+  --driver-popover-footer-button-border-radius: 8px;
+  --driver-popover-footer-button-font-weight: bold;
+
+  /* Botão "Próximo" */
+  --driver-popover-footer-button-next-background: #4bc2c7;
+  --driver-popover-footer-button-next-color: #2d3436;
+
+  /* Botão "Voltar" */
+  --driver-popover-footer-button-prev-background: #636e72;
+  --driver-popover-footer-button-prev-color: white;
+
+  /* Efeitos extras */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #4bc2c7;
+  
+}
+
+/* Personalizar seta do popover */
+.driver-popover-arrow {
+  --driver-popover-arrow-size: 20px;
+  --driver-popover-arrow-color: #2d3436;
+}
+
+/* Customizar números do passo-a-passo */
+.driver-popover-progress-text {
+  font-size: 0.9rem;
+  color: #81ecec !important;
+}
